@@ -1,0 +1,48 @@
+.subscribe {
+    margin-bottom: 30px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 70px;
+        border-radius: 10px;
+        box-shadow: 0 33px 57px rgba(13, 16, 37, 0.06);
+    }
+
+    .heading {
+        text-align: left;
+        max-width: 371px;
+    }
+
+    .text {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .subscribe {
+        &__container {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .titlebox {
+            width: 100%;
+        }
+
+        .heading {
+            width: 100%;
+            text-align: center;
+        }
+
+        .text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            width: 100%;
+        }
+    }
+}
